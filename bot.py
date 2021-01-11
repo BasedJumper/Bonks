@@ -29,6 +29,8 @@ starrtamontofcrypto =float(dogeamout[0])
 buyamount=1
 sellamount=1
 
+run = True
+
 
 # buy using the RH API
 def buy(crypto,amountofcrypto,price):
@@ -36,6 +38,13 @@ def buy(crypto,amountofcrypto,price):
 #sell using the Rh API
 def sell(crypto,orderamount,priceofcrypto):
 	r.order_sell_crypto_limit(crypto, orderamount, priceofcrypto, timeInForce='gtc')
+
+while run:
+	currentprice = float(r.get_crypto_quote(crypto,"ask_price"))
+	print("start_price:"+str(startingprice))
+	print("current_price:"+str(currentprice))
+	print("cash:"+str(startingamountmoney))
+	print("amount:"+str(starrtamontofcrypto))
 
 
 
