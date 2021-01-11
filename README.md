@@ -6,3 +6,5 @@ Robinhood trading bot using the unofficial API
 pip install pyotp
 pip install robin_stocks
 ```
+## Contact
+[Discord](https://discord.gg/K5GFMBHURU)
