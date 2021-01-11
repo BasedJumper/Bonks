@@ -11,13 +11,13 @@ ask_price=[]
 
 bid_price=[]
 
-#only trading doge at the momment 
+#only trading doge at the moment 
 crypto="DOGE"
 
-#whats doges price when we started trading 
+#doges price when we started trading 
 startingprice= float(r.get_crypto_quote(crypto,"ask_price"))
 
-#whats our account balance 
+#our account balance 
 startingamountmoney =float(r.load_account_profile("cash"))
 
 #the amout of doge we own 
